@@ -1,88 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#171714">
-<title>I'm Sorry — Just Us</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#fff0f4">
+<title>Maaf Karde Na 🥺</title>
 <style>
-:root{--ink:#f6f0e7;--muted:#bdb4a8;--bg:#171714;--rose:#d8a6a0;--line:#4b4540}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif}
-button{font:inherit;cursor:pointer}.wrap{width:min(1040px,90%);margin:auto}
-.intro{position:fixed;inset:0;z-index:10;background:#171714;display:flex;align-items:center;justify-content:center;text-align:center;padding:28px;transition:opacity .8s,visibility .8s}
-.intro.hide{opacity:0;visibility:hidden;pointer-events:none}.intro-inner{max-width:600px}.eyebrow{font:10px Arial,sans-serif;letter-spacing:4px;text-transform:uppercase;color:var(--rose)}
-.intro h1{font-size:clamp(54px,10vw,100px);font-weight:normal;line-height:.98;margin:25px 0}.intro p{color:var(--muted);font-size:16px;line-height:1.8}
-.btn{border:1px solid #a99b8c;color:var(--ink);background:transparent;padding:14px 20px;font:10px Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;margin-top:24px}.btn:hover{background:var(--ink);color:var(--bg)}
-header{border-bottom:1px solid var(--line);padding:18px 0}.headrow{display:flex;align-items:center;justify-content:space-between;gap:15px}.brand{font:10px Arial,sans-serif;letter-spacing:3px}.music{font:10px Arial,sans-serif;letter-spacing:1px;color:var(--ink);background:#292723;border:1px solid var(--line);padding:10px 13px}
-.hero{text-align:center;padding:100px 0 62px}.hero h2{font-size:clamp(43px,8vw,84px);font-weight:normal;line-height:1.03;letter-spacing:-2px;margin:25px 0}.hero .lead{max-width:570px;margin:0 auto;color:var(--muted);font-size:16px;line-height:1.9}
-.note{max-width:650px;margin:0 auto 65px;text-align:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:35px 24px}.note p{font-size:18px;line-height:1.95;color:#e5dbcf}.note .small{font:10px Arial,sans-serif;letter-spacing:2px;color:var(--rose);text-transform:uppercase}
-.section-title{text-align:center;margin:75px 0 32px}.section-title h3{font-size:clamp(30px,5vw,48px);font-weight:normal;margin:14px 0}.section-title p{font-size:14px;line-height:1.8;color:var(--muted)}
-.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:start}.photo{margin:0}.photo:nth-child(even){margin-top:55px}.photo img{width:100%;display:block;object-fit:cover;aspect-ratio:4/5;background:#292723;filter:saturate(.88)}.photo figcaption{font-size:15px;line-height:1.6;color:#e8dfd4;padding-top:12px}.photo small{display:block;font:9px Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;color:var(--rose);margin-top:5px}
-.closing{text-align:center;max-width:680px;margin:110px auto 90px}.closing h3{font-size:clamp(40px,7vw,66px);font-weight:normal;line-height:1.1;margin:22px 0}.closing p{color:#d8cec2;font-size:17px;line-height:2}.signature{color:var(--rose);font-style:italic;font-size:24px;margin-top:28px}
-footer{text-align:center;border-top:1px solid var(--line);padding:28px 10px 38px;color:var(--muted);font:9px Arial,sans-serif;letter-spacing:3px}
-.player-wrap{display:none;margin:18px auto 0;max-width:560px}.player-wrap.show{display:block}.player-wrap iframe{width:100%;aspect-ratio:16/9;border:0}
-@media(max-width:560px){.hero{padding-top:75px}.gallery{gap:13px}.photo:nth-child(even){margin-top:32px}.photo figcaption{font-size:13px}.note{padding:28px 12px}.note p{font-size:16px}.closing{margin:80px auto}}
-</style>
-</head>
+:root{--pink:#ff719d;--hot:#ff477e;--cream:#fff8f2;--ink:#432b37;--muted:#896d7a;--line:#ffd1df}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'Trebuchet MS',Arial,sans-serif}button{font:inherit;cursor:pointer}.wrap{width:min(980px,90%);margin:auto}.intro{position:fixed;inset:0;z-index:10;background:#fff0f4;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;transition:opacity .55s,visibility .55s}.intro.hide{opacity:0;visibility:hidden;pointer-events:none}.intro-inner{max-width:520px}.sticker{font-size:clamp(54px,12vw,88px);animation:bob 1.7s ease-in-out infinite}@keyframes bob{50%{transform:translateY(-8px) rotate(5deg)}}.eyebrow{font-size:11px;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--hot)}h1{font-size:clamp(45px,9vw,76px);line-height:1;margin:15px 0;color:#d93670;letter-spacing:-2px}p{line-height:1.65}.intro p{font-size:17px;color:var(--muted)}.btn{border:0;border-radius:999px;background:var(--hot);color:white;padding:14px 22px;font-weight:800;box-shadow:0 6px 0 #d93670;transition:transform .15s;margin:8px}.btn:active{transform:translateY(3px);box-shadow:0 3px 0 #d93670}.btn.secondary{background:white;color:#b33e69;box-shadow:0 5px 0 #f1c1d1;border:1px solid var(--line)}header{padding:16px 0;border-bottom:1px solid var(--line);background:#fffafc}.headrow{display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{font-size:11px;font-weight:900;letter-spacing:1.5px;color:#d93670}.music{border:1px solid var(--line);border-radius:999px;background:white;color:#b33e69;padding:10px 13px;font-weight:800;font-size:12px}.player-wrap{display:none;margin:14px auto 0;max-width:560px}.player-wrap.show{display:block}.player-wrap iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:14px}.player-wrap p{font-size:12px;color:var(--muted)}.hero{text-align:center;padding:65px 0 38px}.hero h2{font-size:clamp(36px,7vw,62px);line-height:1.08;letter-spacing:-1.5px;margin:14px 0;color:#d93670}.hero .lead{font-size:17px;color:var(--muted);max-width:540px;margin:0 auto}.plea{display:inline-block;background:#fff;border:2px dashed #ffabc5;border-radius:24px;padding:22px 25px;margin:27px auto 10px;max-width:540px;box-shadow:0 8px 25px #f9dce6}.plea p{font-size:18px;margin:0}.choices{margin:14px 0 0;display:flex;justify-content:center;flex-wrap:wrap;gap:8px}.response{min-height:30px;font-weight:800;color:#d93670;margin-top:20px}.section-title{text-align:center;margin:58px 0 25px}.section-title h3{font-size:clamp(30px,5vw,45px);margin:10px 0;color:#d93670}.section-title p{color:var(--muted);margin:0}.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:start}.photo{margin:0;background:white;padding:9px;border-radius:17px;box-shadow:0 5px 18px #f5dfe7;transform:rotate(-1deg)}.photo:nth-child(even){margin-top:28px;transform:rotate(1.3deg)}.photo img{width:100%;display:block;object-fit:cover;aspect-ratio:4/5;border-radius:11px;background:#ffe7ef}.photo figcaption{text-align:center;font-size:13px;color:#805b6b;padding:10px 3px 4px;font-weight:700}.photo small{display:block;font-size:9px;letter-spacing:1.5px;color:#e45c8a;margin-top:5px}.closing{text-align:center;margin:80px auto 70px;max-width:560px}.closing .big{font-size:clamp(40px,8vw,62px)}.closing p{color:var(--muted);font-size:16px}.signature{font-size:20px;font-weight:900;color:#d93670;margin-top:18px}footer{text-align:center;border-top:1px solid var(--line);padding:24px 10px 32px;color:#b18498;font-size:10px;letter-spacing:2px;font-weight:800}@media(max-width:560px){.hero{padding-top:48px}.gallery{gap:12px}.photo{padding:6px;border-radius:12px}.photo img{border-radius:8px}.photo figcaption{font-size:11px}.photo:nth-child(even){margin-top:20px}.headrow{align-items:flex-start}.brand{padding-top:8px}.plea{padding:18px 15px}}
+</style></head>
 <body>
-<div class="intro" id="intro"><div class="intro-inner">
-<div class="eyebrow">A little note from me to you</div>
-<h1>I'm sorry.</h1>
-<p>I can't undo what happened. But I can be honest about it, take responsibility, and try to make things right.</p>
-<button class="btn" id="open">Read my note&nbsp; ↗</button>
-</div></div>
-<header><div class="wrap headrow"><div class="brand">JUST US · A SMALL APOLOGY</div><button class="music" id="music">♫ PLAY OUR SONG</button></div>
-<div class="wrap player-wrap" id="player">
-<iframe id="yt" title="Jaane Bhi De — Heyy Babyy" src="https://www.youtube-nocookie.com/embed/dpyrwKsNIMU?enablejsapi=1&playsinline=1&rel=0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
-<p style="font:11px Arial,sans-serif;color:#bdb4a8;line-height:1.6">Song: “Jaane Bhi De” from <em>Heyy Babyy</em>. Tap play in the player to listen.</p>
-</div></header>
-<main class="wrap">
-<section class="hero"><div class="eyebrow">No excuses. Just honesty.</div><h2>You matter to me.<br>I'm sorry I hurt you.</h2><p class="lead">I made a mistake, and I know that an apology doesn't automatically fix it. I don't expect a website or a few words to make everything okay. I just wanted to make something thoughtful, and to tell you that I'm taking this seriously.</p></section>
-<section class="note"><div class="small">What I want you to know</div>
-<p>I'm sorry for what I did and for how it made you feel. You deserved more care from me in that moment. I won't ask you to get over it quickly or pretend it didn't matter. I'll listen, respect how you feel, and let my actions—not just this apology—show you that I mean it.</p>
-</section>
-<section class="section-title"><div class="eyebrow">A few moments I hold close</div><h3>Not to erase the bad.<br>Just to remember the good.</h3><p>These memories mean a lot to me. So does the person in them.</p></section>
-<section class="gallery" id="gallery"></section>
-<section class="closing"><div class="eyebrow">One last thing</div><h3>I don't expect instant forgiveness.</h3><p>I just hope, when you're ready, you'll let me hear you and understand what I need to do differently. You don't owe me a quick reply or a smile before you're ready.</p><p>I'm sorry. I care about you, and I want to do better in ways you can actually feel.</p><div class="signature">With love, and with sincerity. ♥</div></section>
-</main>
-<footer>MADE WITH CARE · JUST FOR YOU</footer>
+<div class="intro" id="intro"><div class="intro-inner"><div class="sticker">🥺👉👈</div><div class="eyebrow">Important announcement</div><h1>Maaf karde na?</h1><p>Thodi si galti ho gayi. Thoda sa gussa valid hai. But can I please try to make it better? 🥹</p><button class="btn" id="open">Achha baba, dekho na 💌</button></div></div>
+<header><div class="wrap headrow"><div class="brand">PROJECT: MANAAO HER 💗</div><button class="music" id="music">♫ OUR SONG</button></div><div class="wrap player-wrap" id="player"><iframe id="yt" title="Jaane Bhi De — Heyy Babyy" src="https://www.youtube-nocookie.com/embed/dpyrwKsNIMU?playsinline=1&rel=0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe><p>Tap play to hear “Jaane Bhi De” from <em>Heyy Babyy</em> 🎶</p></div></header>
+<main class="wrap"><section class="hero"><div class="eyebrow">A tiny peace offering ✨</div><h2>Gustakhi maaf<br>karde, jaane de 🥺</h2><p class="lead">I messed up. No excuses. Bas ab thoda sa gussa kam kar do… please? 👉👈</p><div class="plea"><p>🥹 <strong>Officially requesting:</strong><br>one chance to make it up to you<br><small>(terms & conditions: I actually do better)</small></p></div><div class="choices"><button class="btn" id="forgive">Theek hai, maaf kiya 💗</button><button class="btn secondary" id="think">Hmph. Sochungi 😤</button></div><div class="response" id="response" aria-live="polite"></div></section>
+<section class="section-title"><div class="eyebrow">Evidence that we can be cute sometimes 📸</div><h3>Our little photo dump</h3><p>Not a bribe. Okay, maybe 2% a bribe. 🫣</p></section><section class="gallery" id="gallery"></section>
+<section class="closing"><div class="big">🧸🌷</div><h3 style="color:#d93670;font-size:clamp(34px,6vw,48px);margin:12px 0">Gussa kar lo…</h3><p>Bas mujhe tumhe better treat karne ka chance bhi de dena. I’ll let my actions do the talking. 💗</p><div class="signature">— Your slightly stupid human 🫶</div></section></main><footer>MAAN JAOOO NA · PREPARED WITH EXTRA 🥺</footer>
 <script>
-const photos = [
-  ["memory-01.jpg","A quiet moment together"],
-  ["memory-02.jpg","One of those days"],
-  ["memory-03.jpg","Dressed up, side by side"],
-  ["memory-04.jpg","A little fresh air"],
-  ["memory-05.jpg","Paris, together"],
-  ["memory-06.jpg","A night to remember"],
-  ["memory-07.jpg","A little everyday happiness"],
-  ["memory-08.jpg","A favourite kind of selfie"],
-  ["memory-09.jpg","Exploring somewhere new"],
-  ["memory-10.jpg","Another memory to keep"],
-  ["memory-11.jpg","Us, out and about"],
-  ["memory-12.jpg","A smile I love seeing"],
-  ["memory-13.jpg","A moment from our travels"],
-  ["memory-14.jpg","A city, a walk, a memory"],
-  ["memory-15.jpg","A familiar face, a happy day"],
-  ["memory-16.jpg","Together in a new place"],
-  ["memory-17.jpg","A little snapshot of us"],
-  ["memory-18.jpg","An evening together"],
-  ["memory-19.jpg","The world is big; this moment is ours"],
-  ["memory-20.jpg","One more memory I treasure"]
-];
-const gallery=document.getElementById("gallery");
-photos.forEach(([src,caption],i)=>{
- const figure=document.createElement("figure"); figure.className="photo";
- const img=document.createElement("img"); img.src="photos/"+src; img.alt=caption; img.loading="lazy";
- const cap=document.createElement("figcaption"); cap.textContent=caption;
- const small=document.createElement("small"); small.textContent="MEMORY "+String(i+1).padStart(2,"0"); cap.appendChild(small);
- figure.append(img,cap); gallery.appendChild(figure);
-});
-document.getElementById("open").addEventListener("click",()=>document.getElementById("intro").classList.add("hide"));
-document.getElementById("music").addEventListener("click",()=>{
- const player=document.getElementById("player"); player.classList.toggle("show");
- document.getElementById("music").textContent=player.classList.contains("show")?"♫ SONG PLAYER OPEN":"♫ PLAY OUR SONG";
- if(player.classList.contains("show")) player.scrollIntoView({behavior:"smooth",block:"nearest"});
-});
-</script>
-</body>
-</html>
+const photos=[['memory-01.jpg','A good day with you 💗'],['memory-02.jpg','Us being us 🫶'],['memory-03.jpg','Looking kinda cute ngl ✨'],['memory-04.jpg','Fresh air, familiar face 🌿'],['memory-05.jpg','Paris memories 🗼'],['memory-06.jpg','A night to remember 🌙'],['memory-07.jpg','Tiny happy moment ☀️'],['memory-08.jpg','Selfie department 📸'],['memory-09.jpg','Little adventures 🌍'],['memory-10.jpg','Another one for the album 💌'],['memory-11.jpg','Out and about 🚶'],['memory-12.jpg','That smile though 🥹'],['memory-13.jpg','Travel buddies ✈️'],['memory-14.jpg','A little city magic 🌆'],['memory-15.jpg','Certified cuties 🤏'],['memory-16.jpg','Somewhere with you 🌸'],['memory-17.jpg','A random favourite 💕'],['memory-18.jpg','Good times, good company 🌙'],['memory-19.jpg','One for the memories 🪄'],['memory-20.jpg','Okay this one is cute 🥺']];
+const gallery=document.getElementById('gallery');photos.forEach(([src,caption],i)=>{const f=document.createElement('figure');f.className='photo';const im=document.createElement('img');im.src='photos/'+src;im.alt=caption;im.loading='lazy';const c=document.createElement('figcaption');c.textContent=caption;const s=document.createElement('small');s.textContent='MEMORY '+String(i+1).padStart(2,'0');c.appendChild(s);f.append(im,c);gallery.appendChild(f)});
+document.getElementById('open').addEventListener('click',()=>document.getElementById('intro').classList.add('hide'));
+document.getElementById('music').addEventListener('click',()=>{const p=document.getElementById('player');p.classList.toggle('show');document.getElementById('music').textContent=p.classList.contains('show')?'♫ SONG IS READY':'♫ OUR SONG';if(p.classList.contains('show'))p.scrollIntoView({behavior:'smooth',block:'nearest'})});
+document.getElementById('forgive').addEventListener('click',()=>{document.getElementById('response').textContent='🥹 YAY—virtual hug incoming! I’ll still show you I mean it. 💗';});document.getElementById('think').addEventListener('click',()=>{document.getElementById('response').textContent='Valid 😔 I’ll give you space… and work on being better. 🫶';});
+</script></body></html>
